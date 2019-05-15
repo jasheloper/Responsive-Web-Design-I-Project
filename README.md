@@ -6,13 +6,16 @@ Student should be able to describe the differences in fixed, fluid, adaptive, an
 *Completed all Minimal Viable Project Tasks*
 
 
-<img src="" alt=""> <img src="" alt=""> <img src="" alt="">
+ <img src="img/desktopview" alt=""> 
+ <img src="img/tabletview" alt=""> 
 
 
 # Project Links
 
-<a href="http://jasheletillman.me/Responsive-Web-Design-I-Project/" target=_blank> See this Project Live? </a>
+<a href="http://jasheletillman.me/Responsive-Web-Design-I-Project/" target=_blank> See this Project Live? </a> 
 
+Media query breakpoints are at 800px and 500px.
+<br /><br />
 
 
 # Contact Me
