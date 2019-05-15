@@ -1,3 +1,542 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: 'Share Tech Mono';
+	font-size: 22px; 
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+p {
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 14px;
+	line-height: 2;
+	color: #333333;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+.container {
+	margin: auto;
+	width: 900px;
+	padding: 15px;
+	box-sizing: border-box;
+}
+
+.container nav a {
+	display: inline-block;
+	box-sizing: border-box;
+	text-decoration: none;
+	color: #051414;
+	padding: 25px;
+}
+
+nav a:hover {
+	color: white; 
+}
+
+nav {
+	padding: 0px;
+	background-color: #adebeb;
+	border-radius: 20px;
+}
+
+nav .logo {
+	display: inline-block;
+	padding-left: 0px; 
+}
+
+nav .logo a {
+	padding: 0;
+	text-decoration: none;
+}
+
+.home-page {
+	padding: 1px; 
+}
+
+#contact {
+	color: rgb(145, 122, 82);
+}
+
+#contact:hover {
+	color: white; 
+}
 
 
+header {
+	border-bottom: 1px solid black;
+}
+
+.title-text {
+	margin-top: 70px; 
+	width: 300px;
+	height: 300px; 
+	text-align: center; 
+	
+}
+
+.top-container {
+	display: flex; 
+	margin-left: 76px; 
+	box-sizing: border-box;
+	padding-bottom: 10px; 
+}
+.top-container h1 {
+	font-size: 60px;
+	font-family: 'Share Tech Mono', monospace;
+	color: #44acac;
+}
+
+.coding-image {
+	margin-top: 40px; 
+	margin-left: 104px; 
+	width: 300px;
+	height: 300px; 
+}
+
+.coding-image img {
+	width: 280px;
+	height: 280px; 
+}
+
+/*
+.title {
+	display: inline-block;
+	box-sizing: border-box;
+	margin: 90px;
+	width: 300px;
+	text-align: center;
+}
+.title h1 {
+	font-size: 60px;
+	font-family: 'Share Tech Mono', monospace;
+	color: #44acac;
+}
+
+.top-logo {
+display: inline-block;
+margin-top: 110px;
+width: 300px;
+}
+
+.top-logo img {
+	width: 300px;
+	height: 300px;
+}
+*/
+
+
+/* TOP CONTENT */
+
+
+
+button {
+	padding: 5px;
+	width: 190px;
+	height: 37px;
+	font-size: 17px;
+	border: 1px solid #235f5f;
+	border-radius: 10px;
+	background-color: #0f4f4f;
+	font-family: 'Share Tech Mono', monospace;
+	color: #e6f9f9;
+	letter-spacing: 1.3px;
+	animation-duration: 2s;
+	animation-name: introbutton;
+	animation-iteration-count: 30;
+}
+
+@keyframes introbutton {
+	from {background-color: #0f4f4f; }
+	to {background-color: #041313; }
+}
+
+
+
+
+/* Demonstration of more CSS specificity from User Interface I */
+
+
+
+/* Section One 
+
+.section-one {
+	display: inline-block;
+	margin: 2px;  
+	padding-top: 35px; 
+	box-sizing: border-box;
+	width: 428px;
+}
+.section-one p {
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 14px;
+	line-height: 2;
+	color: #333333;
+}
+*/
+
+.top-section {
+	display: flex;
+	box-sizing: border-box;
+	padding-top: 20px;
+}
+
+.a-top-box h2 {
+	font-family: 'Share Tech Mono';
+	font-size: 30px; 
+}
+
+.a-top-box {
+	margin: 10px; 
+	width: 400px; 
+	border-radius: 40px; 
+	box-sizing: border-box;
+	padding: 20px; 
+}
+
+.a-top-box p {
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 14px;
+	line-height: 2;
+	color: #333333;
+}
+.features {
+	background-color: rgb(234, 237, 198); 
+}
+.about {
+	background-color: rgb(225, 220, 220); 
+}
+
+/* 
+.section-one.features {}
+.section-one.about {}
+*/
+
+
+img.middle-img {
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+
+
+
+
+/* Mid Section */
+
+.mid-section {
+	display: flex;
+	box-sizing: border-box;
+	padding-bottom: 30px; 
+}
+
+.mid-box {
+	margin: 10px; 
+	width: 310px; 
+	border-radius: 40px; 
+	box-sizing: border-box;
+	padding: 20px; 
+}
+
+.mid-box h2 {
+	font-family: 'Share Tech Mono';
+	font-size: 30px;
+	text-align: center;  
+}
+
+.mid-box p {
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 14px;
+	line-height: 2;
+	color: #333333;
+}
+
+.services {
+	background: rgb(188, 245, 221); 
+}
+.product {
+	background: rgb(242, 210, 252); 
+}
+.vision {
+	background: rgb(243, 232, 212); 
+}
+
+
+/*
+.section-two {
+	display: inline-block;
+	margin: 2.8px;  
+	box-sizing: border-box;
+	width: 281px;
+	padding-bottom: 35px; 
+}
+.section-two p {
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 14px;
+	line-height: 2;
+	color: #333333;
+}
+*/
+
+
+/* 
+.section-two.services {}
+.section-two.product {}
+.section-two.vision {}
+*/
+
+
+
+/* End of page */
+
+contact {
+	display: block; 
+	box-sizing: border-box;
+	padding-top: 20px;
+	border-top: 1px solid black;
+	text-align: center;
+	color: #333333;
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 14px;
+	line-height: 2;
+}
+
+contact h3 {
+	font-family: 'Share Tech Mono';
+	font-size: 30px; 
+}
+
+
+/* Footer */
+
+footer {
+	box-sizing: border-box;
+	padding: 50px;
+	text-align: center;
+	line-height: 2;
+	color: #1c6c64;
+	font-family: 'Share Tech Mono';
+	font-size: 19px;
+	text-transform: uppercase;
+}
+
+
+/* Contact .html Page  */
+
+
+header.contact {
+	border-top: 0px;
+	border-bottom: 0;
+}
+
+header nav  {
+	position: static;
+}
+
+.page-box {
+		display: block;
+		margin: auto; 
+		box-sizing: border-box;
+		width: 300px;
+		padding-top: 29px;
+		padding-bottom: 50px;
+		font-family: 'Noto Sans KR', sans-serif;
+}
+
+.page-box p {
+	font-family: 'Noto Sans KR', sans-serif;
+	line-height: 1.8;
+}
+
+.page-box.form {
+	padding-top: 50px; 
+	width: 700px;
+}
+
+.page-box.form h3 {
+	font-family: 'Share Tech Mono';
+	font-size: 40px;
+}
+
+#myform h4 {
+	font-family: 'Share Tech Mono';
+	font-size: 25px; 
+}
+
+.contact-us {
+	display: block; 
+	padding-bottom: 17px;   
+	width: 50%; 
+	
+}
+
+.contact-us h1 {
+	text-align: center; 
+	font-family: 'Share Tech Mono';
+	font-size: 40px; 
+}
+
+.contact-methods-section {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.contact-methods {
+	box-sizing: border-box; 
+	margin: 10px; 
+	padding: 20px;
+	width: 400px;
+	border-radius: 20px;
+	border: 1px solid black;
+}
+
+.contact-methods p {
+	line-height: 1.8;
+	font-size: 14px;
+}
+
+.contact-methods h2 {
+	font-family: 'Share Tech Mono';
+	text-align: center;
+	font-size: 27px; 
+}
+
+.contact-methods.forum {
+	background-color: rgb(245, 209, 226); 
+}
+.contact-methods.chat {
+	background-color: rgb(209, 245, 219); 
+}
+.contact-methods.email {
+	background-color: rgb(209, 214, 245); 
+}
+.contact-methods.phone {
+	background-color: rgb(245, 209, 209); 
+}
+
+
+/* Product Page */
+
+.product-top {
+	/* margin-top: 4px; */
+	padding: 20px; 
+	box-sizing: border-box;
+}
+
+.product-top h2 {
+	padding: 10px;
+	font-size: 60px; 
+	text-align: center; 
+	color: black;
+}
+
+.product-top img {
+	width: 810px; 
+	box-sizing: border-box;
+	padding-bottom: 10px; 
+	border: 2px solid white; 
+}
+
+.product-top p {
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 14px;
+	line-height: 2;
+	color: rgb(90, 97, 97);
+}
+
+.products-container {
+	display: flex;
+}
+
+.product-box {
+	width: 460px;
+	padding: 20px; 
+	box-sizing: border-box;
+}
+
+.product-box p {
+	box-sizing: border-box;
+	padding: 5px;
+	line-height: 2.7;
+}
+
+.product-box img {
+	width: 340px;
+	height: 300px; 
+	border: 3px solid rgb(99, 206, 181);
+}
+
+.the-bottom-box {
+	padding: 30px; 
+	box-sizing: border-box;
+	text-align: center;
+}
+
+.the-bottom-box img {
+	padding: 30px; 
+	box-sizing: border-box;
+}
+
+.the-bottom-box h2 {
+	font-size: 40px; 
+	color: rgb(31, 145, 153); 
+}
