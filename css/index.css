@@ -71,7 +71,11 @@ p {
 	color: #333333;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+/* You will be creating an adaptive version of the "Great Idea" design.  */
+
+
+
 
 .container {
 	margin: auto;
@@ -80,49 +84,55 @@ p {
 	box-sizing: border-box;
 }
 
+
+/* Nav */
+
+nav {
+	padding: 30px;
+}
+
 .container nav a {
-	display: inline-block;
-	box-sizing: border-box;
+	padding: 26px; 
 	text-decoration: none;
 	color: #051414;
-	padding: 25px;
 }
 
 nav a:hover {
 	color: white; 
 }
 
-nav {
-	padding: 0px;
-	background-color: #adebeb;
-	border-radius: 20px;
-}
 
 nav .logo {
-	display: inline-block;
-	padding-left: 0px; 
+	display: inline-block; 
+	padding: 10px; 
 }
 
 nav .logo a {
-	padding: 0;
+	padding: 1px;
 	text-decoration: none;
 }
+
 
 .home-page {
 	padding: 1px; 
 }
 
-#contact {
+
+/* #contact {
 	color: rgb(145, 122, 82);
 }
 
 #contact:hover {
 	color: white; 
-}
+} */
+
+
+
+/* Header */
 
 
 header {
-	border-bottom: 1px solid black;
+	border-bottom: 2px solid black; 
 }
 
 .title-text {
@@ -157,36 +167,6 @@ header {
 	height: 280px; 
 }
 
-/*
-.title {
-	display: inline-block;
-	box-sizing: border-box;
-	margin: 90px;
-	width: 300px;
-	text-align: center;
-}
-.title h1 {
-	font-size: 60px;
-	font-family: 'Share Tech Mono', monospace;
-	color: #44acac;
-}
-
-.top-logo {
-display: inline-block;
-margin-top: 110px;
-width: 300px;
-}
-
-.top-logo img {
-	width: 300px;
-	height: 300px;
-}
-*/
-
-
-/* TOP CONTENT */
-
-
 
 button {
 	padding: 5px;
@@ -211,27 +191,191 @@ button {
 
 
 
-
-/* Demonstration of more CSS specificity from User Interface I */
-
+/* Media Queries */
 
 
-/* Section One 
 
-.section-one {
-	display: inline-block;
-	margin: 2px;  
-	padding-top: 35px; 
-	box-sizing: border-box;
-	width: 428px;
+/* At 800px do this */
+
+@media (max-width: 800px) {
+
+	.container {
+		width: 700px;
+		padding: 0;
+	}
+	.container nav {
+		display: flex; 
+		flex-direction: column;
+		align-items: center; 
+		width: 680px; 
+		padding: 10px; 
+	}
+
+	.container nav a {
+		padding: 27x; 
+		color: gray; 
+	}
+	nav a:hover {
+		color: blue; 
+	}
+	nav .logo { 
+		 width: 200px; 
+		 padding-bottom: 30px; 
+	}
+
+
+	.home-page {
+		width: 687px; 
+		padding: 0;
+	}
+
+	header {
+	
+		border-bottom: 2px solid black; 
+	}
+	.title-text {
+	
+	}
+	.top-container {
+		margin: auto; 
+		flex-direction: column; 
+		align-items: center;
+		width: 500px;
+	}
+
+	.top-container h1 {}
+	.coding-image {
+		display: none; 
+	}
+	.coding-image img {}
+	button {}
+	.top-section {
+		 
+		width: 687px; 
+		padding: 0;
+	}
+	.middle-img {
+		
+		width: 687px; 
+		padding: 0;
+	}
+	.mid-section {
+		
+		width: 687px; 
+		padding: 0;
+	}
+	contact {
+		width: 687px; 
+		padding: 0;
+	}
+	footer {
+		width: 687px; 
+		padding: 0;
+	}
+
+
+
+
+
 }
-.section-one p {
-	font-family: 'Noto Sans KR', sans-serif;
-	font-size: 14px;
-	line-height: 2;
-	color: #333333;
-}
-*/
+
+
+
+
+
+/* At 500px do this */
+
+@media (max-width: 500px) {
+
+	.container {
+		width: 400px;
+		padding: 0;
+	}
+	.container nav {
+		display: flex; 
+		flex-direction: column-reverse;
+		align-items: center; 
+		width: 385px;
+		padding: 10px; 
+	}
+
+	.container nav a {
+		width: 400px; 
+		padding: 40x; 
+		border-bottom: 1px solid gray; 
+		text-align: center; 
+		font-size: 20px; 
+		color: gray; 
+	}
+	nav a:hover {
+		color: blue; 
+	}
+	nav .logo { 
+		 width: 200px; 
+		 padding-bottom: 5px; 
+	}
+
+
+	.home-page {
+
+		padding: 0;
+	}
+
+	header {
+	
+		border-bottom: 2px solid black; 
+	}
+
+	.title-text {
+	}
+
+	.top-container {
+		margin: auto; 
+		flex-direction: column; 
+		align-items: center;
+		width: 220px; 
+	}
+
+	.top-container h1 {}
+	.coding-image {
+		display: none; 
+	}
+	.coding-image img {}
+	button {}
+	.top-section { 
+		flex-wrap: wrap;
+		width: 385px;  
+		padding: 0;
+	}
+
+	.middle-img {
+		width: 385px; 
+		padding: 0;
+	}
+	.mid-section {
+		flex-direction: column;
+		align-items: center; 
+		width: 395px;  
+		padding: 0;
+	}
+	contact {
+		width: 385px;   
+		padding: 0;
+	}
+	footer {
+		width: 385px;   
+		padding: 0;
+	}
+
+
+
+
+	}
+
+
+
+
+/* Section One */
 
 .top-section {
 	display: flex;
@@ -265,11 +409,6 @@ button {
 	background-color: rgb(225, 220, 220); 
 }
 
-/* 
-.section-one.features {}
-.section-one.about {}
-*/
-
 
 img.middle-img {
 	padding-top: 25px;
@@ -278,9 +417,7 @@ img.middle-img {
 
 
 
-
-
-/* Mid Section */
+/* Section 2 */
 
 .mid-section {
 	display: flex;
@@ -320,32 +457,7 @@ img.middle-img {
 }
 
 
-/*
-.section-two {
-	display: inline-block;
-	margin: 2.8px;  
-	box-sizing: border-box;
-	width: 281px;
-	padding-bottom: 35px; 
-}
-.section-two p {
-	font-family: 'Noto Sans KR', sans-serif;
-	font-size: 14px;
-	line-height: 2;
-	color: #333333;
-}
-*/
-
-
-/* 
-.section-two.services {}
-.section-two.product {}
-.section-two.vision {}
-*/
-
-
-
-/* End of page */
+/* Contact Section */
 
 contact {
 	display: block; 
@@ -365,6 +477,7 @@ contact h3 {
 }
 
 
+
 /* Footer */
 
 footer {
@@ -379,7 +492,84 @@ footer {
 }
 
 
-/* Contact .html Page  */
+
+
+/* CSS from past assignment using inline-block, layout has since be refactored but kept CSS here... */
+
+/*
+.title {
+	display: inline-block;
+	box-sizing: border-box;
+	margin: 90px;
+	width: 300px;
+	text-align: center;
+}
+.title h1 {
+	font-size: 60px;
+	font-family: 'Share Tech Mono', monospace;
+	color: #44acac;
+}
+
+.top-logo {
+display: inline-block;
+margin-top: 110px;
+width: 300px;
+}
+
+.top-logo img {
+	width: 300px;
+	height: 300px;
+}
+*/
+
+
+
+
+/* Section One 
+
+.section-one {
+	display: inline-block;
+	margin: 2px;  
+	padding-top: 35px; 
+	box-sizing: border-box;
+	width: 428px;
+}
+.section-one p {
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 14px;
+	line-height: 2;
+	color: #333333;
+}
+*/
+
+
+
+
+/*
+.section-two {
+	display: inline-block;
+	margin: 2.8px;  
+	box-sizing: border-box;
+	width: 281px;
+	padding-bottom: 35px; 
+}
+.section-two p {
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 14px;
+	line-height: 2;
+	color: #333333;
+}
+*/
+
+
+
+
+
+/* Contact Page  */
+
+
+
+/* CSS not needed for this project 
 
 
 header.contact {
@@ -474,11 +664,16 @@ header nav  {
 }
 
 
+
+
 /* Product Page */
+
+
+/* CSS not needed for this project 
 
 .product-top {
 	/* margin-top: 4px; */
-	padding: 20px; 
+	 /* padding: 20px; 
 	box-sizing: border-box;
 }
 
@@ -540,3 +735,5 @@ header nav  {
 	font-size: 40px; 
 	color: rgb(31, 145, 153); 
 }
+
+*/
