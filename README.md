@@ -1,3 +1,25 @@
+# Project Details
+
+<b>Objectives:</b><br />
+Student should be able to describe the differences in fixed, fluid, adaptive, and responsive layouts; demonstrate knowledge of media queries by correctly implementing them in a project and build responsive layouts using an effective approach.
+
+*Completed all Minimal Viable Project Tasks*
+
+
+<img src="" alt=""> <img src="" alt=""> <img src="" alt="">
+
+
+# Project Links
+
+<a href="http://jasheletillman.me/Responsive-Web-Design-I-Project/" target=_blank> See this Project Live? </a>
+
+
+
+# Contact Me
+<a href="http://jasheletillman.me/" target=_blank>Portfolio</a> • <a href="https://www.linkedin.com/in/jashelet/" target=_blank>LinkedIn</a> • <a href="https://twitter.com/jasheloper" target=_blank>Twitter</a> • <a href="https://www.instagram.com/jasheloper/" target=_blank>Instagram</a> • <a href="mailto:jftjashele@gmail.com" target=_blank>E-mail</a> 
+<br /><br />
+
+
 # Responsive Web Design I: Adaptive Website
 
 It's time to expand our CSS skills into multiple devices.  You will be creating an adaptive version of the "Great Idea" design. You will be working through design mock ups for desktop, tablet, and mobile devices located in the [design-files](design-files) folder. 
