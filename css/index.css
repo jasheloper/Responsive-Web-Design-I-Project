@@ -98,24 +98,32 @@ nav {
 }
 
 nav a:hover {
-	color: white; 
-}
-
-
-nav .logo {
-	display: inline-block; 
-	padding: 10px; 
-}
-
-nav .logo a {
-	padding: 1px;
-	text-decoration: none;
+	color: blue; 
 }
 
 
 .home-page {
 	padding: 1px; 
 }
+
+
+/* Great Idea Logo */
+
+
+/* For Desktop View */
+
+.GI-logo {
+	display: inline;
+}
+
+
+
+/* For 800px View */
+
+.logo-800 {
+	display: none;
+}
+
 
 
 /* #contact {
@@ -203,54 +211,67 @@ button {
 		width: 700px;
 		padding: 0;
 	}
+
+	.home-page {
+		width: 670px; 
+		padding: 0;
+	}
+
 	.container nav {
-		display: flex; 
-		flex-direction: column;
+		margin: auto; 
+		display: flex;
 		align-items: center; 
-		width: 680px; 
-		padding: 10px; 
+		width: 570px; 
+		padding: 1px; 
 	}
 
 	.container nav a {
-		padding: 27x; 
+		padding: 20px; 
 		color: gray; 
 	}
 	nav a:hover {
 		color: blue; 
 	}
-	nav .logo { 
-		 width: 200px; 
-		 padding-bottom: 30px; 
+
+	.GI-logo {
+		display: none;
 	}
 
-
-	.home-page {
-		width: 687px; 
-		padding: 0;
+	.logo-800 {
+		display: flex;
+		align-items: center; 
 	}
+
+	.GI-logo-800 {
+		margin: auto; 
+		padding-top: 15px; 
+	}
+
 
 	header {
-	
+		height: 400px; 
 		border-bottom: 2px solid black; 
 	}
-	.title-text {
 	
-	}
-	.top-container {
-		margin: auto; 
+	.top-container { 
 		flex-direction: column; 
 		align-items: center;
 		width: 500px;
 	}
 
-	.top-container h1 {}
+	.title-text {
+		margin: 20px; 
+	}
+
+	.top-container h1 {
+		text-align: center; 
+	}
 	.coding-image {
 		display: none; 
 	}
 	.coding-image img {}
 	button {}
 	.top-section {
-		 
 		width: 687px; 
 		padding: 0;
 	}
@@ -293,7 +314,7 @@ button {
 	}
 	.container nav {
 		display: flex; 
-		flex-direction: column-reverse;
+		flex-direction: column;
 		align-items: center; 
 		width: 385px;
 		padding: 10px; 
@@ -310,19 +331,14 @@ button {
 	nav a:hover {
 		color: blue; 
 	}
-	nav .logo { 
-		 width: 200px; 
-		 padding-bottom: 5px; 
-	}
 
 
 	.home-page {
-
 		padding: 0;
 	}
 
 	header {
-	
+		height: 735px;
 		border-bottom: 2px solid black; 
 	}
 
@@ -340,7 +356,9 @@ button {
 	.coding-image {
 		display: none; 
 	}
-	.coding-image img {}
+	.coding-image img {
+		margin: auto; 
+	}
 	button {}
 	.top-section { 
 		flex-wrap: wrap;
