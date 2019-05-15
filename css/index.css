@@ -117,13 +117,11 @@ nav a:hover {
 }
 
 
-
 /* For 800px View */
 
 .logo-800 {
 	display: none;
 }
-
 
 
 /* #contact {
@@ -269,8 +267,7 @@ button {
 	.coding-image {
 		display: none; 
 	}
-	.coding-image img {}
-	button {}
+	
 	.top-section {
 		width: 687px; 
 		padding: 0;
@@ -318,6 +315,7 @@ button {
 		align-items: center; 
 		width: 385px;
 		padding: 10px; 
+		
 	}
 
 	.container nav a {
@@ -332,34 +330,41 @@ button {
 		color: blue; 
 	}
 
+	.logo-800 {
+		width: 400px;
+		padding-bottom: 20px;
+		border-bottom: 1px solid gray;
+	}
+
 
 	.home-page {
 		padding: 0;
 	}
 
 	header {
-		height: 735px;
+		height: 790px;
 		border-bottom: 2px solid black; 
 	}
 
-	.title-text {
-	}
 
 	.top-container {
-		margin: auto; 
+		margin-top: 26px;
 		flex-direction: column; 
 		align-items: center;
 		width: 220px; 
 	}
 
-	.top-container h1 {}
+	.title-text {
+		text-align: center;
+	}
+
 	.coding-image {
 		display: none; 
 	}
 	.coding-image img {
 		margin: auto; 
 	}
-	button {}
+
 	.top-section { 
 		flex-wrap: wrap;
 		width: 385px;  
@@ -383,11 +388,7 @@ button {
 	footer {
 		width: 385px;   
 		padding: 0;
-	}
-
-
-
-
+		}
 	}
 
 
